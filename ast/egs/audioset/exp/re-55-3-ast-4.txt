@@ -1,0 +1,663 @@
+I am process 915639, running on autodl-container-6856119752-93bc3eea: starting (Sun Apr  2 22:54:36 2023)
+now train a audio spectrogram transformer model
+balanced sampler is being used
+---------------the train dataloader---------------
+now using following mask: 48 freq, 192 time
+now using mix-up with rate 0.500000
+now process audioset
+use dataset mean -4.268 and std 4.569 to normalize the input.
+number of classes is 6
+---------------the evaluation dataloader---------------
+now using following mask: 0 freq, 0 time
+now using mix-up with rate 0.000000
+now process audioset
+use dataset mean -4.268 and std 4.569 to normalize the input.
+number of classes is 6
+---------------AST Model Summary---------------
+ImageNet pretraining: True, AudioSet pretraining: False
+frequncey stride=10, time stride=10
+number of patches=1212
+
+Creating experiment directory: /home/cn/lcr/ast-master/egs/audioset/exp/re-55-3-ast-acc-lr1e-4-decoupe
+Now starting training for 40 epochs
+running on cuda
+Total parameter number is : 87.731 million
+Total trainable parameter number is : 87.731 million
+now training with audioset, main metrics: acc, loss function: BCEWithLogitsLoss(), learning rate scheduler: <torch.optim.lr_scheduler.MultiStepLR object at 0x7fb166634160>
+The learning rate scheduler starts at 2 epoch with decay rate of 0.500 every 1 epochs
+current #steps=0, #epochs=1
+start training...
+---------------
+2023-04-02 22:54:41.700754
+current #epochs=1, #steps=0
+warm-up learning rate is 0.000000
+start validation
+mAP: 0.198608
+acc: 0.210660
+AUC: 0.569162
+Avg Precision: 0.171140
+Avg Recall: 1.000000
+d_prime: 0.246416
+train_loss: 0.695592
+valid_loss: 0.885357
+validation finished
+Epoch-1 lr: 0.0
+epoch 1 training time: 32.219
+---------------
+2023-04-02 22:55:13.920044
+current #epochs=2, #steps=34
+warm-up learning rate is 0.000005
+start validation
+mAP: 0.316876
+acc: 0.383249
+AUC: 0.686167
+Avg Precision: 0.192402
+Avg Recall: 1.000000
+d_prime: 0.685915
+train_loss: 0.597464
+valid_loss: 0.753236
+validation finished
+Epoch-2 lr: 2.5e-06
+epoch 2 training time: 31.636
+---------------
+2023-04-02 22:55:45.556146
+current #epochs=3, #steps=68
+warm-up learning rate is 0.000010
+Epoch: [3][32/34]	Per Sample Total Time 0.04846	Per Sample Data Time 0.00838	Per Sample DNN Time 0.04008	Train Loss 0.4217	
+start validation
+mAP: 0.508606
+acc: 0.606599
+AUC: 0.810705
+Avg Precision: 0.283240
+Avg Recall: 1.000000
+d_prime: 1.245213
+train_loss: 0.421363
+valid_loss: 0.735339
+validation finished
+Epoch-3 lr: 5e-06
+epoch 3 training time: 31.877
+---------------
+2023-04-02 22:56:17.433033
+current #epochs=4, #steps=102
+start validation
+mAP: 0.680998
+acc: 0.657360
+AUC: 0.896202
+Avg Precision: 0.321533
+Avg Recall: 1.000000
+d_prime: 1.782196
+train_loss: 0.385956
+valid_loss: 0.727480
+validation finished
+Epoch-4 lr: 2.5e-06
+epoch 4 training time: 31.704
+---------------
+2023-04-02 22:56:49.137459
+current #epochs=5, #steps=136
+warm-up learning rate is 0.000015
+start validation
+mAP: 0.801126
+acc: 0.771574
+AUC: 0.946926
+Avg Precision: 0.419797
+Avg Recall: 1.000000
+d_prime: 2.285015
+train_loss: 0.342841
+valid_loss: 0.716153
+validation finished
+Epoch-5 lr: 7.5e-06
+epoch 5 training time: 32.721
+---------------
+2023-04-02 22:57:21.858628
+current #epochs=6, #steps=170
+warm-up learning rate is 0.000020
+Epoch: [6][30/34]	Per Sample Total Time 0.04897	Per Sample Data Time 0.00888	Per Sample DNN Time 0.04009	Train Loss 0.2875	
+start validation
+mAP: 0.846917
+acc: 0.766497
+AUC: 0.963886
+Avg Precision: 0.478425
+Avg Recall: 1.000000
+d_prime: 2.542294
+train_loss: 0.286624
+valid_loss: 0.707629
+validation finished
+Epoch-6 lr: 1e-05
+epoch 6 training time: 29.620
+---------------
+2023-04-02 22:57:51.478203
+current #epochs=7, #steps=204
+start validation
+mAP: 0.863704
+acc: 0.796954
+AUC: 0.972261
+Avg Precision: 0.468536
+Avg Recall: 1.000000
+d_prime: 2.708376
+train_loss: 0.272969
+valid_loss: 0.696127
+validation finished
+Epoch-7 lr: 5e-06
+epoch 7 training time: 32.056
+---------------
+2023-04-02 22:58:23.533899
+current #epochs=8, #steps=238
+warm-up learning rate is 0.000025
+start validation
+mAP: 0.850490
+acc: 0.827411
+AUC: 0.953964
+Avg Precision: 0.436142
+Avg Recall: 1.000000
+d_prime: 2.382333
+train_loss: 0.275866
+valid_loss: 0.689698
+validation finished
+Epoch-8 lr: 1.25e-05
+epoch 8 training time: 32.010
+---------------
+2023-04-02 22:58:55.544220
+current #epochs=9, #steps=272
+warm-up learning rate is 0.000030
+Epoch: [9][28/34]	Per Sample Total Time 0.04962	Per Sample Data Time 0.00954	Per Sample DNN Time 0.04008	Train Loss 0.2580	
+start validation
+mAP: 0.901345
+acc: 0.880711
+AUC: 0.973228
+Avg Precision: 0.491937
+Avg Recall: 1.000000
+d_prime: 2.730148
+train_loss: 0.251641
+valid_loss: 0.672848
+validation finished
+Epoch-9 lr: 1.5e-05
+epoch 9 training time: 32.068
+---------------
+2023-04-02 22:59:27.612039
+current #epochs=10, #steps=306
+start validation
+mAP: 0.927083
+acc: 0.901015
+AUC: 0.982903
+Avg Precision: 0.512321
+Avg Recall: 1.000000
+d_prime: 2.994986
+train_loss: 0.213010
+valid_loss: 0.671169
+validation finished
+Epoch-10 lr: 7.5e-06
+epoch 10 training time: 31.828
+---------------
+2023-04-02 22:59:59.439789
+current #epochs=11, #steps=340
+warm-up learning rate is 0.000035
+start validation
+mAP: 0.926200
+acc: 0.873096
+AUC: 0.984389
+Avg Precision: 0.553375
+Avg Recall: 1.000000
+d_prime: 3.046539
+train_loss: 0.209792
+valid_loss: 0.674349
+validation finished
+Epoch-11 lr: 1.75e-05
+epoch 11 training time: 29.735
+---------------
+2023-04-02 23:00:29.175245
+current #epochs=12, #steps=374
+warm-up learning rate is 0.000040
+Epoch: [12][26/34]	Per Sample Total Time 0.05084	Per Sample Data Time 0.01073	Per Sample DNN Time 0.04011	Train Loss 0.2218	
+start validation
+mAP: 0.928066
+acc: 0.890863
+AUC: 0.979310
+Avg Precision: 0.559700
+Avg Recall: 1.000000
+d_prime: 2.884573
+train_loss: 0.227805
+valid_loss: 0.671467
+validation finished
+Epoch-12 lr: 2e-05
+epoch 12 training time: 29.879
+---------------
+2023-04-02 23:00:59.053756
+current #epochs=13, #steps=408
+start validation
+mAP: 0.931125
+acc: 0.911168
+AUC: 0.989349
+Avg Precision: 0.598274
+Avg Recall: 1.000000
+d_prime: 3.256367
+train_loss: 0.219873
+valid_loss: 0.668195
+validation finished
+Epoch-13 lr: 1e-05
+epoch 13 training time: 31.968
+---------------
+2023-04-02 23:01:31.021440
+current #epochs=14, #steps=442
+warm-up learning rate is 0.000045
+start validation
+mAP: 0.912514
+acc: 0.908629
+AUC: 0.980355
+Avg Precision: 0.514297
+Avg Recall: 1.000000
+d_prime: 2.914875
+train_loss: 0.215293
+valid_loss: 0.669103
+validation finished
+Epoch-14 lr: 2.25e-05
+epoch 14 training time: 29.519
+---------------
+2023-04-02 23:02:00.540199
+current #epochs=15, #steps=476
+warm-up learning rate is 0.000050
+Epoch: [15][24/34]	Per Sample Total Time 0.05152	Per Sample Data Time 0.01142	Per Sample DNN Time 0.04010	Train Loss 0.2138	
+start validation
+mAP: 0.950464
+acc: 0.913706
+AUC: 0.984439
+Avg Precision: 0.550939
+Avg Recall: 1.000000
+d_prime: 3.048357
+train_loss: 0.210944
+valid_loss: 0.662298
+validation finished
+Epoch-15 lr: 2.5e-05
+epoch 15 training time: 32.140
+---------------
+2023-04-02 23:02:32.680506
+current #epochs=16, #steps=510
+start validation
+mAP: 0.949978
+acc: 0.923858
+AUC: 0.983689
+Avg Precision: 0.551707
+Avg Recall: 1.000000
+d_prime: 3.021771
+train_loss: 0.179941
+valid_loss: 0.659800
+validation finished
+Epoch-16 lr: 1.25e-05
+epoch 16 training time: 31.851
+---------------
+2023-04-02 23:03:04.531774
+current #epochs=17, #steps=544
+warm-up learning rate is 0.000055
+start validation
+mAP: 0.938067
+acc: 0.928934
+AUC: 0.987308
+Avg Precision: 0.530725
+Avg Recall: 1.000000
+d_prime: 3.161486
+train_loss: 0.198409
+valid_loss: 0.662937
+validation finished
+Epoch-17 lr: 2.7500000000000004e-05
+epoch 17 training time: 31.688
+---------------
+2023-04-02 23:03:36.219351
+current #epochs=18, #steps=578
+warm-up learning rate is 0.000060
+Epoch: [18][22/34]	Per Sample Total Time 0.05222	Per Sample Data Time 0.01212	Per Sample DNN Time 0.04010	Train Loss 0.1981	
+start validation
+mAP: 0.940328
+acc: 0.928934
+AUC: 0.984760
+Avg Precision: 0.456915
+Avg Recall: 1.000000
+d_prime: 3.060053
+train_loss: 0.210550
+valid_loss: 0.662804
+validation finished
+Epoch-18 lr: 3e-05
+epoch 18 training time: 29.615
+---------------
+2023-04-02 23:04:05.834230
+current #epochs=19, #steps=612
+start validation
+mAP: 0.920011
+acc: 0.918782
+AUC: 0.977171
+Avg Precision: 0.533006
+Avg Recall: 1.000000
+d_prime: 2.826368
+train_loss: 0.199155
+valid_loss: 0.662038
+validation finished
+Epoch-19 lr: 1.5e-05
+epoch 19 training time: 29.606
+---------------
+2023-04-02 23:04:35.440577
+current #epochs=20, #steps=646
+warm-up learning rate is 0.000065
+start validation
+mAP: 0.906802
+acc: 0.870558
+AUC: 0.974339
+Avg Precision: 0.453833
+Avg Recall: 1.000000
+d_prime: 2.755980
+train_loss: 0.175647
+valid_loss: 0.669323
+validation finished
+Epoch-20 lr: 3.2500000000000004e-05
+epoch 20 training time: 29.546
+---------------
+2023-04-02 23:05:04.987078
+current #epochs=21, #steps=680
+warm-up learning rate is 0.000070
+Epoch: [21][20/34]	Per Sample Total Time 0.05385	Per Sample Data Time 0.01377	Per Sample DNN Time 0.04008	Train Loss 0.1792	
+start validation
+mAP: 0.915526
+acc: 0.916244
+AUC: 0.979838
+Avg Precision: 0.521889
+Avg Recall: 1.000000
+d_prime: 2.899715
+train_loss: 0.187062
+valid_loss: 0.664832
+validation finished
+Epoch-21 lr: 3.5e-05
+epoch 21 training time: 29.857
+---------------
+2023-04-02 23:05:34.844305
+current #epochs=22, #steps=714
+start validation
+mAP: 0.918179
+acc: 0.878173
+AUC: 0.982339
+Avg Precision: 0.467486
+Avg Recall: 1.000000
+d_prime: 2.976427
+train_loss: 0.174609
+valid_loss: 0.664602
+validation finished
+Epoch-22 lr: 1.75e-05
+epoch 22 training time: 29.783
+---------------
+2023-04-02 23:06:04.627396
+current #epochs=23, #steps=748
+warm-up learning rate is 0.000075
+start validation
+mAP: 0.901063
+acc: 0.682741
+AUC: 0.977347
+Avg Precision: 0.517684
+Avg Recall: 1.000000
+d_prime: 2.830964
+train_loss: 0.178756
+valid_loss: 0.686803
+validation finished
+Epoch-23 lr: 3.7500000000000003e-05
+epoch 23 training time: 29.838
+---------------
+2023-04-02 23:06:34.464679
+current #epochs=24, #steps=782
+warm-up learning rate is 0.000080
+Epoch: [24][18/34]	Per Sample Total Time 0.05441	Per Sample Data Time 0.01404	Per Sample DNN Time 0.04037	Train Loss 0.1925	
+start validation
+mAP: 0.934067
+acc: 0.895939
+AUC: 0.986881
+Avg Precision: 0.581689
+Avg Recall: 1.000000
+d_prime: 3.143322
+train_loss: 0.188907
+valid_loss: 0.664187
+validation finished
+Epoch-24 lr: 4e-05
+epoch 24 training time: 29.560
+---------------
+2023-04-02 23:07:04.024616
+current #epochs=25, #steps=816
+start validation
+mAP: 0.936306
+acc: 0.923858
+AUC: 0.985434
+Avg Precision: 0.546306
+Avg Recall: 1.000000
+d_prime: 3.085399
+train_loss: 0.171518
+valid_loss: 0.658989
+validation finished
+Epoch-25 lr: 2e-05
+epoch 25 training time: 29.605
+---------------
+2023-04-02 23:07:33.629775
+current #epochs=26, #steps=850
+warm-up learning rate is 0.000085
+start validation
+mAP: 0.937104
+acc: 0.921320
+AUC: 0.986348
+Avg Precision: 0.536383
+Avg Recall: 1.000000
+d_prime: 3.121376
+train_loss: 0.174531
+valid_loss: 0.661912
+validation finished
+Epoch-26 lr: 4.25e-05
+epoch 26 training time: 29.823
+---------------
+2023-04-02 23:08:03.452651
+current #epochs=27, #steps=884
+warm-up learning rate is 0.000090
+Epoch: [27][16/34]	Per Sample Total Time 0.05740	Per Sample Data Time 0.01726	Per Sample DNN Time 0.04014	Train Loss 0.1624	
+start validation
+mAP: 0.936142
+acc: 0.913706
+AUC: 0.984710
+Avg Precision: 0.530900
+Avg Recall: 1.000000
+d_prime: 3.058216
+train_loss: 0.175932
+valid_loss: 0.660400
+validation finished
+Epoch-27 lr: 4.5e-05
+epoch 27 training time: 29.970
+---------------
+2023-04-02 23:08:33.423065
+current #epochs=28, #steps=918
+warm-up learning rate is 0.000095
+start validation
+mAP: 0.930616
+acc: 0.916244
+AUC: 0.984932
+Avg Precision: 0.570741
+Avg Recall: 1.000000
+d_prime: 3.066436
+train_loss: 0.183509
+valid_loss: 0.657136
+validation finished
+Epoch-28 lr: 4.75e-05
+epoch 28 training time: 29.645
+---------------
+2023-04-02 23:09:03.068393
+current #epochs=29, #steps=952
+start validation
+mAP: 0.884720
+acc: 0.888325
+AUC: 0.958581
+Avg Precision: 0.518041
+Avg Recall: 1.000000
+d_prime: 2.452883
+train_loss: 0.177599
+valid_loss: 0.667260
+validation finished
+Epoch-29 lr: 2.375e-05
+epoch 29 training time: 29.677
+---------------
+2023-04-02 23:09:32.745306
+current #epochs=30, #steps=986
+warm-up learning rate is 0.000100
+Epoch: [30][14/34]	Per Sample Total Time 0.05851	Per Sample Data Time 0.01841	Per Sample DNN Time 0.04009	Train Loss 0.1656	
+start validation
+mAP: 0.927718
+acc: 0.888325
+AUC: 0.982690
+Avg Precision: 0.585532
+Avg Recall: 1.000000
+d_prime: 2.987917
+train_loss: 0.159382
+valid_loss: 0.658351
+validation finished
+Epoch-30 lr: 5e-05
+epoch 30 training time: 29.684
+---------------
+2023-04-02 23:10:02.429619
+current #epochs=31, #steps=1020
+start validation
+mAP: 0.936218
+acc: 0.885787
+AUC: 0.985776
+Avg Precision: 0.595473
+Avg Recall: 1.000000
+d_prime: 3.098631
+train_loss: 0.170984
+valid_loss: 0.660527
+validation finished
+Epoch-31 lr: 2.5e-05
+epoch 31 training time: 29.801
+---------------
+2023-04-02 23:10:32.230874
+current #epochs=32, #steps=1054
+start validation
+mAP: 0.943344
+acc: 0.923858
+AUC: 0.988049
+Avg Precision: 0.552290
+Avg Recall: 1.000000
+d_prime: 3.194279
+train_loss: 0.158059
+valid_loss: 0.656223
+validation finished
+Epoch-32 lr: 1.25e-05
+epoch 32 training time: 29.761
+---------------
+2023-04-02 23:11:01.992068
+current #epochs=33, #steps=1088
+Epoch: [33][12/34]	Per Sample Total Time 0.06236	Per Sample Data Time 0.02228	Per Sample DNN Time 0.04008	Train Loss 0.1369	
+start validation
+mAP: 0.941780
+acc: 0.906091
+AUC: 0.986960
+Avg Precision: 0.548526
+Avg Recall: 1.000000
+d_prime: 3.146645
+train_loss: 0.148481
+valid_loss: 0.658571
+validation finished
+Epoch-33 lr: 6.25e-06
+epoch 33 training time: 29.723
+---------------
+2023-04-02 23:11:31.714629
+current #epochs=34, #steps=1122
+start validation
+mAP: 0.942534
+acc: 0.923858
+AUC: 0.986780
+Avg Precision: 0.556958
+Avg Recall: 1.000000
+d_prime: 3.139128
+train_loss: 0.139995
+valid_loss: 0.656821
+validation finished
+Epoch-34 lr: 3.125e-06
+epoch 34 training time: 29.634
+---------------
+2023-04-02 23:12:01.348512
+current #epochs=35, #steps=1156
+start validation
+mAP: 0.942765
+acc: 0.908629
+AUC: 0.986690
+Avg Precision: 0.566929
+Avg Recall: 1.000000
+d_prime: 3.135380
+train_loss: 0.152460
+valid_loss: 0.657655
+validation finished
+Epoch-35 lr: 1.5625e-06
+epoch 35 training time: 29.693
+---------------
+2023-04-02 23:12:31.041568
+current #epochs=36, #steps=1190
+Epoch: [36][10/34]	Per Sample Total Time 0.06539	Per Sample Data Time 0.02528	Per Sample DNN Time 0.04011	Train Loss 0.1460	
+start validation
+mAP: 0.943450
+acc: 0.916244
+AUC: 0.986919
+Avg Precision: 0.564689
+Avg Recall: 1.000000
+d_prime: 3.144923
+train_loss: 0.150479
+valid_loss: 0.657459
+validation finished
+Epoch-36 lr: 7.8125e-07
+epoch 36 training time: 29.711
+---------------
+2023-04-02 23:13:00.752177
+current #epochs=37, #steps=1224
+start validation
+mAP: 0.943105
+acc: 0.921320
+AUC: 0.986811
+Avg Precision: 0.563674
+Avg Recall: 1.000000
+d_prime: 3.140390
+train_loss: 0.139063
+valid_loss: 0.657275
+validation finished
+Epoch-37 lr: 3.90625e-07
+epoch 37 training time: 29.523
+---------------
+2023-04-02 23:13:30.275366
+current #epochs=38, #steps=1258
+start validation
+mAP: 0.943169
+acc: 0.921320
+AUC: 0.986714
+Avg Precision: 0.561026
+Avg Recall: 1.000000
+d_prime: 3.136368
+train_loss: 0.145843
+valid_loss: 0.657326
+validation finished
+Epoch-38 lr: 1.953125e-07
+epoch 38 training time: 29.860
+---------------
+2023-04-02 23:14:00.135062
+current #epochs=39, #steps=1292
+Epoch: [39][8/34]	Per Sample Total Time 0.07155	Per Sample Data Time 0.03147	Per Sample DNN Time 0.04008	Train Loss 0.1505	
+start validation
+mAP: 0.943241
+acc: 0.921320
+AUC: 0.986738
+Avg Precision: 0.562678
+Avg Recall: 1.000000
+d_prime: 3.137363
+train_loss: 0.150993
+valid_loss: 0.657277
+validation finished
+Epoch-39 lr: 9.765625e-08
+epoch 39 training time: 29.692
+---------------
+2023-04-02 23:14:29.827174
+current #epochs=40, #steps=1326
+start validation
+mAP: 0.943224
+acc: 0.918782
+AUC: 0.986726
+Avg Precision: 0.560297
+Avg Recall: 1.000000
+d_prime: 3.136882
+train_loss: 0.151350
+valid_loss: 0.657329
+validation finished
+Epoch-40 lr: 4.8828125e-08
+epoch 40 training time: 29.905
