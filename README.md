@@ -81,11 +81,11 @@ The computing environment is that Linux server with two NVIDIA Geforce RTX 3090,
 
 The experimental results of 4 experimental methods on the AGS dataset are shown in the following figure: 
 
-![result-acc](\result-acc.png)
+![result-acc](/result-acc.png)
 
-![result-map](\result-mAP.png)
+![result-map](/result-mAP.png)
 
 1,406 clear sound data were selected for the experiment, and the following experimental results were obtained:
 
-![result](\result.png)
+![result](/result.png)
 
