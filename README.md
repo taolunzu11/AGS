@@ -83,7 +83,7 @@ The experimental results of 4 experimental methods on the AGS dataset are shown 
 
 ![result-acc](/result-acc.png)
 
-![result-map](/result-mAP.png)
+![result-map](/result-map.png)
 
 1,406 clear sound data were selected for the experiment, and the following experimental results were obtained:
 
